@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCalculator", "MyCalculator.csproj", "{93271151-0424-47B3-BB7E-D5F9F9199C37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodaBreakOut", "..\MetodaBreakOut\MetodaBreakOut.csproj", "{803C0580-C30B-4AEB-A834-A38F01C3BD7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{93271151-0424-47B3-BB7E-D5F9F9199C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93271151-0424-47B3-BB7E-D5F9F9199C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93271151-0424-47B3-BB7E-D5F9F9199C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803C0580-C30B-4AEB-A834-A38F01C3BD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803C0580-C30B-4AEB-A834-A38F01C3BD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803C0580-C30B-4AEB-A834-A38F01C3BD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803C0580-C30B-4AEB-A834-A38F01C3BD7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

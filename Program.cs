@@ -26,7 +26,7 @@ namespace MyCalculator
                     // Choosing operation and check operator.
                     Console.WriteLine("Which operator do you want to use (+, -, *, /, 00 for reset, Q for Quit)?");
                     string chosenOperator = Console.ReadLine();
-                    while (!( (chosenOperator == "+") || (chosenOperator == "-") || (chosenOperator == "*") || (chosenOperator == "/") || (chosenOperator == "00") || (chosenOperator == "q") || (chosenOperator == "Q")))
+                    while (!((chosenOperator == "+") || (chosenOperator == "-") || (chosenOperator == "*") || (chosenOperator == "/") || (chosenOperator == "00") || (chosenOperator == "q") || (chosenOperator == "Q")))
                     {
                         Console.WriteLine("Which operator do you want to use (+, -, *, /, 00 for reset, Q for Quit)?");
                         chosenOperator = Console.ReadLine();
@@ -41,7 +41,7 @@ namespace MyCalculator
                     }
                     else if (chosenOperator == "00")
                     {
-                        myResult= 0;
+                        myResult = 0;
                         Console.WriteLine($"Reset the calculations.");
                         break;
                     }
@@ -53,26 +53,25 @@ namespace MyCalculator
                         Console.WriteLine("I couldn't compute your number, sorry");
                     }
 
+
+                    Calculation actualCalculation = new Calculation();
+                    
+
                     // Calculation.
                     switch (chosenOperator)
                     {
                         case "+":
-                            myResult = number1 + number2;
+                            myResult = actualCalculation.Sum(number1, number2);
                             break;
                         case "-":
-                            myResult = number1 - number2;
+                            myResult = actualCalculation.Subtract(number1,number2);
                             break;
                         case "*":
-                            myResult = number1 * number2;
+                            myResult = actualCalculation.Multiple(number1, number2);
                             break;
                         case "/":
-                            myResult = number1 / number2;
+                            myResult = actualCalculation.Divide(number1, number2);
                             break;
-                        //case "q":
-                        //case "Q":
-                        //    Console.WriteLine("Quit");
-                        //    Console.ReadLine();
-                        //    return;
                         case "00":
                             myResult = 0;
                             break;
@@ -85,7 +84,6 @@ namespace MyCalculator
                     Console.WriteLine($"My result: {number1} {chosenOperator} {number2} = {myResult}");
                     number1 = myResult;
                 }
-                                
             }
         }
     }
