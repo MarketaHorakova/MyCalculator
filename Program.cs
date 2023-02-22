@@ -42,7 +42,7 @@ namespace MyCalculator
                     else if (chosenOperator == "00")
                     {
                         myResult = 0;
-                        Console.WriteLine($"Reset the calculations.");
+                        Console.WriteLine($"Reset the calculator.");
                         break;
                     }
 
@@ -55,30 +55,8 @@ namespace MyCalculator
 
 
                     Calculation actualCalculation = new Calculation();
+                    myResult = actualCalculation.Calculate(number1, number2, chosenOperator);
                     
-
-                    // Calculation.
-                    switch (chosenOperator)
-                    {
-                        case "+":
-                            myResult = actualCalculation.Sum(number1, number2);
-                            break;
-                        case "-":
-                            myResult = actualCalculation.Subtract(number1,number2);
-                            break;
-                        case "*":
-                            myResult = actualCalculation.Multiple(number1, number2);
-                            break;
-                        case "/":
-                            myResult = actualCalculation.Divide(number1, number2);
-                            break;
-                        case "00":
-                            myResult = 0;
-                            break;
-                        default:
-                            Console.WriteLine("I can't calculate with your operator.");
-                            break;
-                    }
 
                     // Vypis vypoctu na konzoli.
                     Console.WriteLine($"My result: {number1} {chosenOperator} {number2} = {myResult}");
