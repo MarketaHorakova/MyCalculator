@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyCalculator
 {
-    public class Calculation
+    public class OperatorSwitch
     {
         //Vlastnosti/Data
 

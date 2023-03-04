@@ -54,7 +54,7 @@ namespace MyCalculator
                     }
 
 
-                    Calculation actualCalculation = new Calculation();
+                    OperatorSwitch actualCalculation = new OperatorSwitch();
                     myResult = actualCalculation.Calculate(number1, number2, chosenOperator);
                     
 
