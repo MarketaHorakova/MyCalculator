@@ -11,7 +11,7 @@ namespace MyCalculator
         //Vlastnosti/Data
 
         //Metody/Operations
-        public double Calculate(double number1, double number2, string chosenOperator)
+        public static double Calculate(double number1, double number2, string chosenOperator)
         {
             switch (chosenOperator)
             {

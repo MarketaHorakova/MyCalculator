@@ -54,8 +54,7 @@ namespace MyCalculator
                     }
 
 
-                    OperatorSwitch actualCalculation = new OperatorSwitch();
-                    myResult = actualCalculation.Calculate(number1, number2, chosenOperator);
+                    myResult = OperatorSwitch.Calculate(number1, number2, chosenOperator);
                     
 
                     // Vypis vypoctu na konzoli.
