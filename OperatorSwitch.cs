@@ -16,13 +16,13 @@ namespace MyCalculator
             switch (chosenOperator)
             {
                 case "+": // Sum
-                    return number1 + number2;
+                    return Sum(number1, number2);
                 case "-": // Subtract
-                    return number1 - number2;
+                    return Subtract(number1,number2);
                 case "*": // Multiple
-                    return number1 * number2;
+                    return Multiple(number1,number2);
                 case "/": // Divide
-                    return number1 / number2;
+                    return Divide(number1, number2);
                 case "00":
                     return 0;
                 default:    // neni potreba
@@ -31,6 +31,25 @@ namespace MyCalculator
             }
         }
 
+        public static double Sum (double number1, double number2) 
+        { 
+            return number1 + number2;
+        }
+
+        public static double Subtract(double number1, double number2)
+        {
+            return number1 - number2;
+        }
+
+        public static double Multiple(double number1, double number2)
+        {
+            return number1 * number2;
+        }
+
+        public static double Divide(double number1, double number2)
+        {
+            return number1 / number2;
+        }
     }
 
 }
